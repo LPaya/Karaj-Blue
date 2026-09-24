@@ -1,0 +1,683 @@
+html {
+    height: 100%;
+    font-family: "Cairo", sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #061A33;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0A2342;
+    padding: 1vh 2vw;
+    margin-bottom: 0;
+    border-bottom: #23466F 1px solid;
+}
+
+.logo {
+    width: 5vw;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    margin: 0;
+}
+
+header ul li a{
+    font-size: 1vw;
+    color: #F5F7FA;
+    text-decoration: none;
+}
+
+.CTA {
+    background-color: #F5007A;
+    color: #F5F7FA;
+    text-decoration: none;
+    padding: 0.2vh 0.8vw;
+    border-radius: 1rem;
+}
+
+.CTA:hover {
+    background-color: #b9015d;
+}
+
+.name {
+    font-size: 1vw;
+    margin: 0;
+    color: #F5F7FA
+}
+
+.background {
+    width: 100%;
+    background-image: url(../images/background-PC.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 15%;
+    height: 70vh;
+    margin-top: 0;
+    border-bottom: #23466F solid 1px;
+}
+
+.phone-img{
+    display: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 0 3vw;
+} 
+
+.hero h1 span {
+    font-size: 1vw;
+    color: #ac0156;
+}
+
+.hero h1 {
+    font-size: 2.5vw;
+    color: #F5F7FA;
+}
+
+.hero p{
+    font-size: 0.9vw;
+    width: 70%;
+    color: #F5F7FA;
+}
+
+.CTA-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+
+    width: 40%;
+    font-size: 1.4vw;
+    padding: 1vh;
+    border-radius: 2rem;
+
+    background-color: #F5007A;
+    color: #F5F7FA;
+    text-decoration: none;
+}
+
+.CTA-2 i {
+    font-size: 1.3em;
+}
+
+.features {
+    background: #061A33;
+    color: #F5F7FA;
+    padding: 7vh 6vw;
+}
+
+/* العنوان */
+
+.features-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 5vh;
+}
+
+.features-title h2 {
+    margin: 0;
+    font-size: clamp(1.8rem, 2.5vw, 3rem);
+    font-weight: 800;
+    color: #F5F7FA;
+}
+
+.features-title span {
+    width: 70px;
+    height: 2px;
+    background: #246BFF;
+}
+
+
+/* الحاوية */
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+/* الكرت */
+
+.feature {
+    text-align: center;
+    padding: 0 2vw;
+    position: relative;
+}
+
+
+/* الفاصل بين الكروت */
+
+.feature:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    background: #23466F;
+}
+
+
+/* الأيقونة */
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 2vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #246BFF;
+    border-radius: 50%;
+
+    color: #246BFF;
+
+    font-size: 1.7rem;
+
+    transition: 0.3s ease;
+}
+
+.feature:hover .feature-icon {
+    background: #246BFF;
+    color: #F5F7FA;
+    box-shadow: 0 0 25px rgba(36, 107, 255, 0.3);
+}
+
+.feature-icon img {
+    width: 2vw;
+}
+
+
+/* العنوان */
+
+.feature h3 {
+    font-size: 1.15rem;
+    margin: 0 0 1vh;
+    color: #F5F7FA;
+    font-weight: 700;
+}
+
+
+/* الوصف */
+#pink {
+    color: #F5007A;
+}
+
+.feature p {
+    margin: 0;
+    color: #A9B8CC;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.features-title h2 span {
+    background:none;
+    color: #F5007A;
+}
+
+.company {
+    color: #F5F7FA;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-size: 1.5vw;
+}
+
+.product {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2vw;
+    margin-top: 5vh;
+}
+
+.product img {
+    width: 40%;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px;
+}
+
+.product p {
+    font-size: 2vw;
+    color: #F5F7FA;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 1vw;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px #000;
+}
+
+.product p span {
+    font-weight: 800;
+    color: #246BFF;
+}
+
+.karaj-blue {
+    padding: 50px 0;
+    width: 90%;
+    margin: auto;
+    border-bottom: #246BFF 1px solid;
+}
+
+.karaj-blue p {
+    position: relative;
+    z-index: 1;
+
+    width: 60%;
+    margin: auto;
+    text-align: center;
+
+    color: #F5F7FA;
+    font-size: 2vw;
+}
+
+.wkala {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5vh auto;
+}
+
+.wkala img {
+    width: 40%;
+    border: 2px #23466F solid;
+    box-shadow: 0 1px 3px #000;
+}
+
+.wkala p {
+    color: #F5F7FA;
+    width: 55%;
+    margin: auto;
+    font-size: 1.8vw;
+}
+
+.wkala p span {
+    color: #F5007A;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 1vh 2vw;
+    background-color: #0A2342;
+    border-top: #23466F 1px solid;
+}
+
+footer img {
+    width: 10vw;
+}
+
+.CTA-3 {
+    font-size: 1vw;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    font-size: 1.5vw;
+    border-radius: 2em;
+    padding: 0.3vw 2vw;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.social-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #246BFF;
+    border-radius: 50%;
+
+    color: #F5F7FA;
+    text-decoration: none;
+
+    font-size: 1.35rem;
+
+    transition: 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #246BFF;
+    color: #FFFFFF;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(36, 107, 255, 0.3);
+}
+
+@media (max-width: 1040px) and (min-height: 720px) {
+    .logo {
+        width: 15vw;
+    }
+
+    .links a {
+        font-size: 2vw;
+    }
+
+    .name {
+        font-size: 2vw;
+    }
+
+    .background {
+        height: 40vh;
+    }
+
+    .hero h1 span {
+        font-size: 2vw;
+    }
+
+    .hero h1 {
+        font-size: 3.5vw;
+    }
+
+    .hero p {
+        font-size: 1.5vw;
+        width: 100%;
+    }
+
+    .CTA-2 {
+        font-size: 2.5vw;
+        width: 60%;
+    }
+
+    .company {
+        font-size: 2vw
+    }
+
+    .product {
+        gap: 5vw;
+    }
+
+    .product img {
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .product p {
+        font-size: 2.5vw;
+    }
+
+    .feature-icon {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .feature-icon img {
+        width: 6vw;
+    }
+
+    .karaj-blue {
+        padding: 0 0 5vh;
+    }
+
+    .karaj-blue p {
+        font-size: 2.5vw;
+        width: 80%;
+    }
+
+    .wkala p {
+        font-size: 2.3vw;
+    }
+
+    footer img {
+        width: 15vw;
+    }
+
+    .CTA-3 {
+        font-size: 2.8vw;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .features {
+        padding: 5vh 4vw;
+    }
+
+    /* العنوان */
+    .features-title {
+        gap: 0.7rem;
+        margin-bottom: 3.5vh;
+    }
+
+    .features-title h2 {
+        font-size: 1.25rem;
+        white-space: nowrap;
+    }
+
+    .features-title span {
+        width: 25px;
+        height: 1px;
+    }
+
+    /* الكروت */
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3vh 0;
+    }
+
+    .feature {
+        padding: 0 3vw;
+    }
+
+    /* الفواصل */
+    .feature:nth-child(odd)::after {
+        display: block;
+        top: 10%;
+        height: 80%;
+    }
+
+    .feature:nth-child(even)::after {
+        display: none;
+    }
+
+    /* الأيقونة */
+    .feature-icon {
+        width: 48px;
+        height: 48px;
+        margin: 0 auto 1.5vh;
+        border-width: 1.5px;
+        font-size: 1.15rem;
+    }
+
+    /* العنوان */
+    .feature h3 {
+        font-size: 0.85rem;
+        margin-bottom: 0.6vh;
+    }
+
+    /* الوصف */
+    .feature p {
+        font-size: 0.72rem;
+        line-height: 1.6;
+    }
+
+    .feature:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 20vw;
+    }
+
+    .links {
+        padding: 0;
+    }
+
+    .links a {
+        font-size: 3vw;
+    }
+
+    .links ul {
+        gap: 4vw;
+        padding: 0;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .CTA {
+        padding: 0.5vw 2vw;
+    }
+
+    .background {
+        background-image: url(../images/background-phone.png);
+        height: 40vh;
+        margin-bottom: 35vh;
+    }
+
+    .hero {
+        margin-top: 35vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero h1 {
+        width: 100%;
+        font-size:6vw;
+    }
+
+    .hero h1 span {
+        font-size: 3vw
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero p {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .CTA-2 {
+        font-size: 5vw;
+        padding: 1.5vw;
+    }
+
+    .company {
+        font-size: 3.2vw
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        margin: 4vh auto;
+        padding: 0;
+    }
+
+    .product img {
+        width: 85%;
+    }
+
+    .product p {
+        font-size: 3.5vw;
+        width: 80%;
+        padding: 2.5vw;
+    }
+
+    .feature-icon img {
+        width: 8vw;
+    }
+
+    .karaj-blue {
+        padding: 0;
+    }
+
+    .karaj-blue p {
+        font-size: 4vw;
+        width: 90%;
+        margin: 2vh auto 5vh;
+    }
+
+    .wkala {
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    .wkala img {
+        width: 85%;
+    }
+
+    .wkala p {
+        font-size: 4vw;
+        width: 80%;
+        text-align: center;
+    }
+
+    footer img {
+        width: 20vw;
+    }
+
+    .CTA-3 {
+        position: static;
+        font-size: 4vw;
+        transform: translate(0);
+    }
+
+    .social-icons {
+        gap: 1vw;
+    }
+
+    .social-icon {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .fa-brands {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 375px) {
+    .background {
+        margin-bottom: 42vh;
+   }
+
+}
