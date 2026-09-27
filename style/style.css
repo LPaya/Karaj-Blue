@@ -245,11 +245,12 @@ header ul li a{
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    margin: auto;
     margin-bottom: 8vh;
 }
 
 .save img {
-    width: 30vw;
+    width: 35vw;
     border-left: #23466F 1px solid;
 }
 
@@ -584,7 +585,7 @@ footer img {
     }
 
     .background {
-        background-image: url(../images/background-phone.png);
+        background-image: url(../images/car_wash_image.png);
         height: 40vh;
         margin-bottom: 35vh;
     }
