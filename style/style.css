@@ -586,7 +586,7 @@ footer img {
 
     .background {
         background-image: url(../images/car_wash_image.png);
-        height: 86.5vw;
+        height: 40vh;
         margin-bottom: 35vh;
     }
 
@@ -716,4 +716,11 @@ footer img {
         margin-bottom: 42vh;
    }
 
+    .hero p {
+        width: 100%;
+    }
+
+    .CTA-2 {
+        width: 60%;
+    }
 }
